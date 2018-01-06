@@ -12,8 +12,8 @@
   </head>
   <body>
     <p>Bonjour !</p>
-    <p>Visitez ce maginfique site internet : <a target="_blank" href="http://www.mathieu-raynaud.com">Mathieu Raynaud Website</a></p>
-    <p>Mais surtout pas celui-là qui est moche : <a href="http://lchasserat.com">Laurent Chasserat Website</a></p>
+    <p>Servlet 1 : <a target="_blank" href="./servlet">hello</a></p>
+    <p>Servlet 2 : <a target="_blank" href="./servlet2">hello</a></p>
   </body>
 </html>
 

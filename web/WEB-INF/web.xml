@@ -25,5 +25,25 @@
         <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>MyServlet2</servlet-name>
+        <servlet-class>Servlet2</servlet-class>
+
+        <description>deuxieme essai</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MyServlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
