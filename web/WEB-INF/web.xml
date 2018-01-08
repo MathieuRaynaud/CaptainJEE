@@ -45,5 +45,24 @@
         <url-pattern>/servlet2</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Servlet_etat_des_charges</servlet-name>
+        <servlet-class>Servlet_etat_des_charges</servlet-class>
+
+        <description>Etat des charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_etat_des_charges</servlet-name>
+        <url-pattern>/etat_des_charges</url-pattern>
+    </servlet-mapping>
 
 </web-app>

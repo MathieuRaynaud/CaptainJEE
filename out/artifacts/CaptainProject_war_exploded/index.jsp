@@ -7,13 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>CaptainProject</title>
-  </head>
-  <body>
-    <p>Bonjour !</p>
-    <p>Servlet 1 : <a target="_blank" href="./servlet">hello</a></p>
-    <p>Servlet 2 : <a target="_blank" href="./servlet2">hello</a></p>
-  </body>
+  <%@ include file="./WEB-INF/src/login.jsp" %>
 </html>
 

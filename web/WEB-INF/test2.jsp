@@ -13,19 +13,13 @@
 <body>
     <h3>Yoyoyo ici la 2e servlet qui vous parle</h3>
     <p>
+        ${ test }
+    </p>
 
-        <%
-            String attribut = (String) request.getAttribute("test");
-            out.println( attribut );
-        %>
     <p>
         Récupération du bean :
-        <%
-            com.sdzee.beans.Coyote notreBean = (com.sdzee.beans.Coyote) request.getAttribute("coyote");
-            out.println( notreBean.getPrenom() );
-            out.println( notreBean.getNom() );
-        %>
-    </p>
+        ${ coyote.nom }
+        ${ coyote.prenom }
     </p>
 </body>
 </html>
