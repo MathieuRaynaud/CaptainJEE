@@ -18,7 +18,7 @@ public class Servlet2 extends HttpServlet{
         premierBean.setNom( "Coyote" );
         premierBean.setPrenom( "Wile E." );
 
-        request.setAttribute( "test", message );
+        request.setAttribute( "coyote", premierBean );
         request.setAttribute( "test", message );
 
         this.getServletContext().getRequestDispatcher( "/WEB-INF/test2.jsp" ).forward( request, response );
