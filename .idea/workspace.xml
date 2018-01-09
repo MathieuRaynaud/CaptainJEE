@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fc42e60-954b-433e-a6c5-4983dd60d980" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/sdzee/beans/Utilisateur.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/sdzee/form/LoginForm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/sdzee/servlets/Servlet_login.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CaptainProject.iml" afterPath="$PROJECT_DIR$/CaptainProject.iml" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/src/login.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/src/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/css/signin.css" afterPath="$PROJECT_DIR$/web/css/signin.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,7 +112,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Bast" />
       </map>
     </option>
   </component>
@@ -486,10 +479,18 @@
       <workItem from="1515255099376" duration="4904000" />
       <workItem from="1515400451305" duration="5888000" />
     </task>
+    <task id="LOCAL-00001" summary="L'architecture de login est faite, il faut maintenant faire le point avec la base de données pour authentifier réellement l'utilisateur">
+      <created>1515516233497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1515516233497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24803000" />
+    <option name="totallyTimeSpent" value="24907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1922" height="1031" extended-state="6" />
@@ -556,6 +557,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="L'architecture de login est faite, il faut maintenant faire le point avec la base de données pour authentifier réellement l'utilisateur" />
+    <option name="LAST_COMMIT_MESSAGE" value="L'architecture de login est faite, il faut maintenant faire le point avec la base de données pour authentifier réellement l'utilisateur" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -634,11 +639,11 @@
         <state relative-caret-position="-4072">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515516095567" expanded="true" signature="61455:61480" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61502" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61536" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61556" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61571" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61480" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61502" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61536" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61556" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61571" ph="..." />
           </folding>
         </state>
       </provider>
@@ -674,11 +679,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515516095567" expanded="true" signature="61455:61480" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61502" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61536" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61556" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61571" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61480" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61502" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61536" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61556" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61571" ph="..." />
           </folding>
         </state>
       </provider>
@@ -729,11 +734,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515516095567" expanded="true" signature="61455:61480" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61502" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61536" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61556" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61571" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61480" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61502" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61536" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61556" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61571" ph="..." />
           </folding>
         </state>
       </provider>
@@ -776,11 +781,11 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1515516095567" expanded="true" signature="61455:61480" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61502" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61536" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61556" ph="..." />
-            <marker date="1515516095567" expanded="true" signature="61455:61571" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61480" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61502" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61536" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61556" ph="..." />
+            <marker date="1515516163235" expanded="true" signature="61455:61571" ph="..." />
           </folding>
         </state>
       </provider>
