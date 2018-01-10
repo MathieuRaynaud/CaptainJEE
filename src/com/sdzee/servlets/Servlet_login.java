@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 
@@ -14,6 +15,7 @@ public class Servlet_login extends HttpServlet {
 
     public static final String ATT_USER = "utilisateur";
     public static final String ATT_FORM = "form";
+    public static final String ATT_SESSION_USER = "sessionUtilisateur";
     public static final String VUE = "/WEB-INF/login.jsp";
 
 
@@ -33,6 +35,19 @@ public class Servlet_login extends HttpServlet {
         /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
 
         Utilisateur utilisateur = form.loggerUtilisateur( request );
+
+        /* Récupération de la session depuis la requête */
+
+        HttpSession session = request.getSession();
+
+
+        /* Si aucune erreur de validation n'a eu lieu, alors ajout du bean */
+
+        if ( form.getErreurs().isEmpty() ) {
+            session.setAttribute( ATT_SESSION_USER, utilisateur );
+        } else {
+            session.setAttribute( ATT_SESSION_USER, null );
+        }
 
         /* Stockage du formulaire et du bean dans l'objet request */
 
