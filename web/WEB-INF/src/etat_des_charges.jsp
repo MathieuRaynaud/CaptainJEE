@@ -43,19 +43,19 @@
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Groupes</a>
+              <a class="nav-link" href="consommation.html">Consommation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Charges<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Groupes</a>
+              <a class="nav-link" href="groupe_charges.html">Groupes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Interrupteurs</a>
+              <a class="nav-link" href="interrupteur.html">Interrupteurs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Catégories</a>
+              <a class="nav-link" href="categorie.html">Catégories</a>
             </li>
           </ul>
         </nav>
