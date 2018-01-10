@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!doctype html>
 <html lang="fr">
   <head>
@@ -5,24 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <title>Programmation de charge</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./css/programmation.css" rel="stylesheet">
+    <link href="/css/programmation.css" rel="stylesheet">
 
 <!-- Include Required Prerequisites -->
-<script type="text/javascript" src="../dist/js/jquery.min.js"></script>
-<script type="text/javascript" src="../dist/js/moment.js"></script>
+<script type="text/javascript" src="/dist/js/jquery.min.js"></script>
+<script type="text/javascript" src="/dist/js/moment.js"></script>
 
 
 <!-- Include Date Range Picker -->
-<script type="text/javascript" src="../dist/js/daterangepicker.js"></script>
-<link rel="stylesheet" type="text/css" href="../dist/css/daterangepicker.css" />
+<script type="text/javascript" src="/dist/js/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="/dist/css/daterangepicker.css" />
 
 
 
@@ -52,19 +54,19 @@
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Consommation</a>
+              <a class="nav-link" href="consommation">Consommation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Charges</a>
+              <a class="nav-link" href="etat_des_charges">Charges</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Groupes</a>
+              <a class="nav-link" href="groupe_charges">Groupes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Interrupteurs</a>
+              <a class="nav-link" href="interrupteur">Interrupteurs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Catégories</a>
+              <a class="nav-link" href="categorie">Catégories</a>
             </li>
           </ul>
         </nav>
@@ -140,7 +142,7 @@ $(function() {
     </div>
 
 
-    <script src="../dist/js/popper.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -25,29 +25,11 @@
         <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
 
-    <servlet>
-        <servlet-name>MyServlet2</servlet-name>
-        <servlet-class>Servlet2</servlet-class>
-
-        <description>deuxieme essai</description>
-
-        <init-param>
-            <param-name>LaTeamJEE</param-name>
-            <param-value>Coyote</param-value>
-        </init-param>
-
-        <load-on-startup>1</load-on-startup>
-
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>MyServlet2</servlet-name>
-        <url-pattern>/servlet2</url-pattern>
-    </servlet-mapping>
+    <!-- *********** Servlet Etat_des_charges ************ -->
 
     <servlet>
         <servlet-name>Servlet_etat_des_charges</servlet-name>
-        <servlet-class>Servlet_etat_des_charges</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_etat_des_charges</servlet-class>
 
         <description>Etat des charges</description>
 
@@ -63,6 +45,148 @@
     <servlet-mapping>
         <servlet-name>Servlet_etat_des_charges</servlet-name>
         <url-pattern>/etat_des_charges</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <!-- ************* Servlet Programmation ************* -->
+
+    <servlet>
+        <servlet-name>Servlet_programmation</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_programmation</servlet-class>
+
+        <description>Programmation des charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_programmation</servlet-name>
+        <url-pattern>/programmation</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <!-- ************* Servlet Interrupteur ************** -->
+
+    <servlet>
+        <servlet-name>Servlet_interrupteur</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_interrupteur</servlet-class>
+
+        <description>Interrupteurs</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_interrupteur</servlet-name>
+        <url-pattern>/interrupteur</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <!-- *********** Servlet Groupe de charges *********** -->
+
+    <servlet>
+        <servlet-name>Servlet_groupe_charges</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_groupe_charges</servlet-class>
+
+        <description>Groupes de charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_groupe_charges</servlet-name>
+        <url-pattern>/groupe_charges</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <!-- ************** Servlet Consommation ************* -->
+
+    <servlet>
+        <servlet-name>Servlet_consommation</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_consommation</servlet-class>
+
+        <description>Consommation</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_consommation</servlet-name>
+        <url-pattern>/consommation</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <!-- *************** Servlet Catégorie *************** -->
+
+    <servlet>
+        <servlet-name>Servlet_categorie</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_categorie</servlet-class>
+
+        <description>Catégories</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_categorie</servlet-name>
+        <url-pattern>/categorie</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
+    <servlet>
+        <servlet-name>Servlet_admin_etat_des_charges</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_etat_des_charges</servlet-class>
+
+        <description>Admin : Etat des charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_admin_etat_des_charges</servlet-name>
+        <url-pattern>/admin_etat_des_charges</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -143,6 +267,26 @@
     <servlet-mapping>
         <servlet-name>Servlet_admin_interrupteur</servlet-name>
         <url-pattern>/admin_interrupteur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet_admin_consommation</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_consommation</servlet-class>
+
+        <description>Admin : Consommation</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_admin_consommation</servlet-name>
+        <url-pattern>/admin_consommation</url-pattern>
     </servlet-mapping>
 
 </web-app>
