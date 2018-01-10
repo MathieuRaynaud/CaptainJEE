@@ -43,7 +43,7 @@
 
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="groupe_charges">Groupes</a>
+              <a class="nav-link" href="consommation">Consommation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="etat_des_charges">Charges<span class="sr-only">(current)</span></a>
