@@ -66,6 +66,27 @@
     </servlet-mapping>
 
     <servlet>
+
+        <servlet-name>Servlet_admin_etat_des_charges</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_etat_des_charges</servlet-class>
+
+        <description>Admin : Etat des charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_admin_etat_des_charges</servlet-name>
+        <url-pattern>/admin_etat_des_charges</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>Servlet_admin_categorie</servlet-name>
         <servlet-class>com.sdzee.servlets.Servlet_admin_categorie</servlet-class>
 
