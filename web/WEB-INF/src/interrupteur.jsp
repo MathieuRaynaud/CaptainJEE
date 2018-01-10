@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!doctype html>
 <html lang="fr">
   <head>
@@ -5,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <title>Interrupteurs</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./css/interrupteur.css" rel="stylesheet">
-    <link href="../dist/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="/css/interrupteur.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap-toggle.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -29,7 +31,7 @@
 
           <form class="form-inline mt-2 mt-md-0">
             <a id="username" class="name"></a>
-            <img width="50" height="50" class="rounded-circle" src="images/user.png">
+            <img width="50" height="50" class="rounded-circle" src="/images/user.png">
           </form>
         </div>
       </nav>
@@ -74,7 +76,7 @@
               <!-- Interrupteur1 -->
               <div class="row">
                 <div class="col-sm-2">
-                  <img class="img-responsive" style="width: 15px" src="images/rouge.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/rouge.png" >
                 </div>
                 <div class="col-sm-2">Interrupteur1</div>
                 <div class="col-sm-2">
@@ -100,7 +102,7 @@
               <!-- Interrupteur2 -->
               <div class="row">
                 <div class="col-sm-2">
-                  <img class="img-responsive" style="width: 15px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
                 </div>
                 <div class="col-sm-2">Interrupteur2</div>
                 <div class="col-sm-2">
@@ -138,7 +140,7 @@
               <!-- Interrupteur1 -->
               <div class="row">
                 <div class="col-sm-2">
-                  <img class="img-responsive" style="width: 15px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
                 </div>
                 <div class="col-sm-2">InterrupteurV1</div>
                 <div class="col-sm-2">
@@ -164,7 +166,7 @@
               <!-- Interrupteur2 -->
               <div class="row">
                 <div class="col-sm-2">
-                  <img class="img-responsive" style="width: 15px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
                 </div>
                 <div class="col-sm-2">InterrupteurV2</div>
                 <div class="col-sm-2">
@@ -196,9 +198,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../dist/js/jquery.min.js"><\/script>')</script>
-    <script src="../dist/js/popper.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
-    <script src="../dist/js/bootstrap-toggle.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/dist/js/jquery.min.js"><\/script>')</script>
+    <script src="/dist/js/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap-toggle.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <!doctype html>
 <html lang="fr">
   <head>
@@ -5,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <title>Groupes de charges</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./css/groupe_charges.css" rel="stylesheet">
-    <link href="../dist/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="/css/groupe_charges.css" rel="stylesheet">
+    <link href="/dist/css/bootstrap-toggle.min.css" rel="stylesheet">
   </head>
 
   <body>
@@ -29,7 +31,7 @@
 
           <form class="form-inline mt-2 mt-md-0">
             <a id="username" class="name"></a>
-            <img width="50" height="50" class="rounded-circle" src="images/user.png">
+            <img width="50" height="50" class="rounded-circle" src="/images/user.png">
           </form>
         </div>
       </nav>
@@ -50,7 +52,7 @@
               <a class="nav-link active" href="#">Groupes<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Interrupteurs</a>
+              <a class="nav-link" href="/interrupteur">Interrupteurs</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Catégories</a>
@@ -65,7 +67,7 @@
             <div class="container">
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 15px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
                 </div>
                 <div class="col-6 placeholder text-left">
                   <h3>Groupe 1</h3>
@@ -74,7 +76,7 @@
               <!-- Charge1 -->
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 10px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 10px" src="/images/vert.png" >
                 </div>
                 <div class="col-1 placeholder text-muted text-left">Charge1</div>
                 <div class="col-4 placeholder">
@@ -86,7 +88,7 @@
               <!-- Charge2 -->
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 10px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 10px" src="/images/vert.png" >
                 </div>
                 <div class="col-1 placeholder text-muted text-left">Charge2</div>
 
@@ -99,7 +101,7 @@
               <!-- Charge3 -->
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 10px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 10px" src="/images/vert.png" >
                 </div>
                 <div class="col-1 placeholder text-muted text-left">Charge3</div>
                 <div class="col-4 placeholder">
@@ -114,7 +116,7 @@
             <div class="container">
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 15px" src="images/jaune.png" >
+                  <img class="img-responsive" style="width: 15px" src="/images/jaune.png" >
                 </div>
                 <div class="col-6 placeholder text-left">
                   <h3>Groupe 2</h3>
@@ -123,7 +125,7 @@
               <!-- Charge4 -->
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 10px" src="images/rouge.png" >
+                  <img class="img-responsive" style="width: 10px" src="/images/rouge.png" >
                 </div>
                 <div class="col-1 placeholder text-muted text-left">Charge4</div>
                 <div class="col-4 placeholder text-muted">
@@ -135,7 +137,7 @@
               <!-- Charge5 -->
               <section class="row text-center placeholders">
                 <div class="col-2 placeholder">
-                  <img class="img-responsive" style="width: 10px" src="images/vert.png" >
+                  <img class="img-responsive" style="width: 10px" src="/images/vert.png" >
                 </div>
                 <div class="col-1 placeholder text-muted text-left">Charge5</div>
                 <div class="col-4 placeholder text-muted">
@@ -154,9 +156,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../dist/js/jquery.min.js"><\/script>')</script>
-    <script src="../dist/js/popper.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
-    <script src="../dist/js/bootstrap-toggle.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/dist/js/jquery.min.js"><\/script>')</script>
+    <script src="/dist/js/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/dist/js/bootstrap-toggle.min.js"></script>
   </body>
 </html>
