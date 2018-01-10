@@ -10,6 +10,7 @@ import javax.servlet.http.*;
 public class Servlet_etat_des_charges extends HttpServlet{
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
+        boolean etatCheckBox = request.getParameter( "cb_id" ) != null;
         this.getServletContext().getRequestDispatcher( "/WEB-INF/src/etat_des_charges.jsp" ).forward( request, response );
     }
 

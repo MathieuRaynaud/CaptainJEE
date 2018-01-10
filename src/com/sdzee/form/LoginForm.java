@@ -1,6 +1,8 @@
 package com.sdzee.form;
 
 import com.sdzee.beans.Utilisateur;
+
+import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -67,8 +69,53 @@ public final class LoginForm {
     }
 
     private void authentification( String email, String password ) throws Exception {
+        // Connect to database
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:db.sqlite");
 
-        throw new Exception("L'email et le mot de passe fournis ne correspondent pas");
+        /* ----- Ajout pour TEST ------*/
+
+        String SQLRequest = "INSERT INTO user VALUES(1,\"test@test.com\",\"test\")";
+        Statement statement = null;
+        try {
+            statement = connection.createStatement();
+
+            // Insert user in case it doesn't exist
+            statement.executeUpdate(SQLRequest); //UPDATE DATA
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+
+            try {
+                statement.executeUpdate(SQLRequest);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            /* --------------------------- */
+
+            if (connection == null) {
+                return;
+            }
+
+            try {
+                /*Statement*/
+                statement = connection.createStatement();
+                /*String*/
+                SQLRequest = "SELECT email FROM user WHERE email = " + email + "AND password = " + password;
+                ResultSet results = statement.executeQuery(SQLRequest); //READ DATA
+
+                //si l'association email/password n'existe pas : levée d'exception
+                if (!results.next()) {
+                    throw new Exception("Les données saisies ne correspondent à aucun utilisateur");
+                }
+
+                // Close database
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
     private static String getValeurChamp( HttpServletRequest request, String nomChamp ) {
