@@ -22,7 +22,7 @@
 
     <div class="container">
 
-      <form class="form-signin">
+      <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Gestion du réseau Captain</h2>
 
         <label for="inputEmail" class="sr-only">Login</label>
@@ -47,10 +47,11 @@
           </label>
         </div>
 
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="connection()">Se connecter</button>
 
         </form>
 
         </div> <!-- /container -->
+          <script>src="/dist/js/connection.js"</script>
         </body>
         </html>

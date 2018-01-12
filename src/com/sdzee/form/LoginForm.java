@@ -62,7 +62,7 @@ public final class LoginForm {
 
     private void validationPassword( String password) throws Exception {
         if (password != null) {
-           if (password.length() < 6 ) {
+           if (password.length() < 3 ) {
                throw new Exception("Les mots de passe doivent contenir au moins 6 caractères.");
            }
         }
