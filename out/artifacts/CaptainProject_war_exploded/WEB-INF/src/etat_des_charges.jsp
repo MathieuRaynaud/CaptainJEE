@@ -90,8 +90,8 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="btn-group" tabindex="0">
-                  <input type="checkbox" checked data-toggle="toggle">
+                <div id="bt1" class="btn-group" tabindex="0" onclick="changerEtatCharge()">
+                  <input  type="checkbox"  checked data-toggle="toggle">
                 </div>
               </div>
             </div>
@@ -114,15 +114,15 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="btn-group" tabindex="0">
-                  <input type="checkbox" checked data-toggle="toggle">
+                <div id="bt2" class="btn-group" tabindex="0" onclick="changerEtatCharge()">
+                  <input  type="checkbox"  checked data-toggle="toggle">
                 </div>
               </div>
             </div>
             <!-- Charge3 -->
             <div class="row">
               <div class="col-sm-2">
-                <img class="img-responsive" style="width: 15px" src="/images/rouge.png" >
+                <img id="img3" class="img-responsive" style="width: 15px" src="/images/vert.png" >
               </div>
               <div class="col-sm-2">Charge3</div>
               <div class="col-sm-2">
@@ -138,8 +138,8 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="btn-group" tabindex="0">
-                  <input type="checkbox" checked data-toggle="toggle">
+                <div id="bt3" class="btn-group" tabindex="0" onclick="changerEtatCharge()">
+                  <input  type="checkbox"  checked data-toggle="toggle">
                 </div>
               </div>
             </div>
@@ -156,5 +156,6 @@
     <script src="/dist/js/popper.min.js"></script>
     <script src="/dist/js/bootstrap.min.js"></script>
     <script src="/dist/js/bootstrap-toggle.min.js"></script>
+    <script src="/dist/js/java.js"></script>
   </body>
 </html>
