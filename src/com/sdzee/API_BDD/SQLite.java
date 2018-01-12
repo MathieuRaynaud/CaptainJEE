@@ -1,5 +1,7 @@
 package com.sdzee.API_BDD;
 
+import org.sqlite.JDBC;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,6 +18,7 @@ public class SQLite {
 
     public void connect() {
         try {
+            DriverManager.registerDriver(new JDBC());
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:" + DBPath);
             statement = connection.createStatement();
