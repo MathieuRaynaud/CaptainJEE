@@ -1,7 +1,7 @@
 package com.sdzee.servlets;
 
 import com.sdzee.beans.Utilisateur;
-import com.sdzee.form.LoginForm;
+import com.sdzee.objets_métier.LoginForm;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
