@@ -79,7 +79,7 @@
 
     <servlet>
         <servlet-name>Servlet_interrupteur</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_interrupteur</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_interrupteur</servlet-class>
 
         <description>Interrupteurs</description>
 
@@ -103,7 +103,7 @@
 
     <servlet>
         <servlet-name>Servlet_groupe_charges</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_groupe_charges</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_groupe_charges</servlet-class>
 
         <description>Groupes de charges</description>
 
@@ -127,7 +127,7 @@
 
     <servlet>
         <servlet-name>Servlet_consommation</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_consommation</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_consommation</servlet-class>
 
         <description>Consommation</description>
 
@@ -151,7 +151,7 @@
 
     <servlet>
         <servlet-name>Servlet_categorie</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_categorie</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_categorie</servlet-class>
 
         <description>Catégories</description>
 
@@ -173,7 +173,7 @@
 
     <servlet>
         <servlet-name>Servlet_admin_etat_des_charges</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_admin_etat_des_charges</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_etat_des_charges</servlet-class>
 
         <description>Admin : Etat des charges</description>
 
@@ -193,7 +193,7 @@
 
     <servlet>
         <servlet-name>Servlet_admin_categorie</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_admin_categorie</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_categorie</servlet-class>
 
         <description>Admin : Gestion des catégories</description>
 
@@ -213,7 +213,7 @@
 
     <servlet>
         <servlet-name>Servlet_admin_gestionUtilisateurs</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_admin_gestionUtilisateurs</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_gestionUtilisateurs</servlet-class>
 
         <description>Admin : Gestion des utilisateurs</description>
 
@@ -233,7 +233,7 @@
 
     <servlet>
         <servlet-name>Servlet_admin_groupe_charges</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_admin_groupe_charges</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_groupe_charges</servlet-class>
 
         <description>Admin : Groupes de charges</description>
 
@@ -273,7 +273,7 @@
 
     <servlet>
         <servlet-name>Servlet_admin_consommation</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_admin_consommation</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_consommation</servlet-class>
 
         <description>Admin : Consommation</description>
 
@@ -293,7 +293,7 @@
 
     <servlet>
         <servlet-name>Servlet_login</servlet-name>
-        <servlet-class>com.server_actions.servlets.Servlet_login</servlet-class>
+        <servlet-class>com.sdzee.servlets.Servlet_login</servlet-class>
 
         <description>Etat des charges</description>
 

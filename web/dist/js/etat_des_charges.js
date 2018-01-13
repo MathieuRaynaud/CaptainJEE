@@ -3,7 +3,6 @@
 function changerEtatCharge(button) {
     var img;
 
-    console.log("hii");
     //Création de la requete HTML
     var xhr = getXMLHttpRequest();
 

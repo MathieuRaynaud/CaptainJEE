@@ -26,19 +26,18 @@ public class Servlet_login extends HttpServlet {
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
 
-        /* Préparation de l'objet formulaire */
+        /*
 
         LoginForm form = new LoginForm();
 
-        /* Appel au traitement et à la validation de la requête, et récupération du bean en résultant */
 
         Utilisateur utilisateur = form.loggerUtilisateur( request );
 
-        /* Stockage du formulaire et du bean dans l'objet request */
 
         request.setAttribute( ATT_FORM, form );
         request.setAttribute( ATT_USER, utilisateur );
 
+        */
         this.getServletContext().getRequestDispatcher( VUE ).forward( request, response );
 
     }
