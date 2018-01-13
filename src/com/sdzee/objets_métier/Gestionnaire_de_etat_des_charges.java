@@ -26,14 +26,14 @@ public class Gestionnaire_de_etat_des_charges {
 
     public void changerEtatCharge(int indice, boolean value) {
         //Ajouter code pour modifier dans la BDD
-        /*
+
         System.out.println("Avane le changement :");
         charges.printCharges();
-        */
+
         charges.changerEtatCharge(indice,value);
-        /*
+
         System.out.println("Après le changement :");
         charges.printCharges();
-        */
+
     }
 }

@@ -18,12 +18,17 @@ public class SQLite {
 
     public void connect() {
         try {
+            System.out.println("A");
             DriverManager.registerDriver(new JDBC());
+            System.out.println("A");
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:" + DBPath);
             statement = connection.createStatement();
             System.out.println("Connexion a " + DBPath + " avec succès");
-        }  catch (SQLException sqlException) {
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            System.out.println("WTFFFFF");
+        } catch (SQLException sqlException) {
             sqlException.printStackTrace();
             System.out.println("Erreur de connection");
         } catch (ClassNotFoundException e) {

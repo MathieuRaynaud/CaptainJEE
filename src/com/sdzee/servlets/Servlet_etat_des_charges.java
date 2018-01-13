@@ -13,6 +13,7 @@ public class Servlet_etat_des_charges extends HttpServlet{
     public static final String ATT_CHARGES = "charges";
     public static final String ATT_GEST = "gest_charges";
     public static final String VUE = "/WEB-INF/src/login.jsp";
+    public SQLite bdd = new SQLite("/WEB-INF/src/db.sqlite");
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
         boolean etatCheckBox = request.getParameter( "cb_id" ) != null;
@@ -25,12 +26,7 @@ public class Servlet_etat_des_charges extends HttpServlet{
         String charge1 = request.getParameter( "charge1" );
         String charge2 = request.getParameter( "charge2" );
         String charge3 = request.getParameter( "charge3" );
-        /*
-        System.out.println(charge1);
-        System.out.println(charge2);
-        System.out.println(charge3);
-        */
-        SQLite bdd = new SQLite("/WEB-INF/src/db.sqlite");
+        System.out.println("Connection à la base de données...");
         bdd.connect();
         bdd.close();
         if (!charge1.equals("null")) {
