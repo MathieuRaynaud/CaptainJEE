@@ -2,10 +2,7 @@ package com.sdzee.API_BDD;
 
 import org.sqlite.JDBC;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class SQLite {
     private String DBPath;
@@ -18,16 +15,11 @@ public class SQLite {
 
     public void connect() {
         try {
-            System.out.println("A");
             DriverManager.registerDriver(new JDBC());
-            System.out.println("A");
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:" + DBPath);
             statement = connection.createStatement();
             System.out.println("Connexion a " + DBPath + " avec succès");
-        } catch (NullPointerException e) {
-            e.printStackTrace();
-            System.out.println("WTFFFFF");
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
             System.out.println("Erreur de connection");
@@ -37,10 +29,32 @@ public class SQLite {
         }
     }
 
+    public ResultSet query(String requete) {
+        ResultSet resultat = null;
+        try {
+            resultat = statement.executeQuery(requete);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println("Erreur dans la requete : " + requete);
+        }
+        return resultat;
+
+    }
+
+    public void submit(String requete) {
+        try {
+            statement.executeUpdate(requete);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+    }
+
     public void close() {
         try {
-            connection.close();
             statement.close();
+            connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
