@@ -54,3 +54,13 @@ function getXMLHttpRequest() {
 
     return xhr;
 }
+
+
+function planifierCharge(user) {
+    if(user == 1){
+        document.location.href = "admin_programmation";
+    }
+    else {
+        document.location.href = "programmation";
+    }
+}

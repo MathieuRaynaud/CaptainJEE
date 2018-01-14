@@ -252,7 +252,7 @@
 <script src="/dist/js/bootstrap.min.js"></script>
 <script src="/dist/js/bootstrap-toggle.min.js"></script>
 <script src="/dist/js/java.js"></script>
-<script src="/dist/js/etat_des_charges.js"></script>
+<script src="/dist/js/admin_etat_des_charges.js"></script>
 </body>
 </html>
 

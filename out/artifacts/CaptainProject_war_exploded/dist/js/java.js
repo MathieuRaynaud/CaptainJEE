@@ -83,16 +83,12 @@ function changePage(page) {
 function connectUser() {
     user = document.getElementById("inputEmail").value;
     var password = document.getElementById("inputPassword").value;
-    console.log("A");
     if (user != "" && password != "") {
-        console.log("B");
         if(user.match("Admin")){
             changePage(1);
-            console.log("C");
         }
         else {
             changePage(6);
-            console.log("D");
         }
 
     }
