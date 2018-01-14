@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <!doctype html>
 <html lang="fr">
 <head>
@@ -43,7 +42,7 @@
 
             <form class="form-inline mt-2 mt-md-0">
                 <a id="username" class="name"></a>
-                <img width="50" height="50" class="rounded-circle" src="images/user.png">
+                <img width="50" height="50" class="rounded-circle" src="images/admin.png">
             </form>
         </div>
     </nav>
@@ -52,26 +51,30 @@
 <div class="container-fluid">
     <div class="row">
         <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+            <ul class="nav nav-pills flex-column hideObject">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="changePage(0)">Utilisateurs</a>
+                </li>
+            </ul>
 
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" onclick="changePage(6)">Consommation</a>
+                    <a class="nav-link" href="#" onclick="changePage(1)">Consommation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="changePage(7)">Charges<span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#" onclick="changePage(2)">Charges<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="changePage(8)">Groupes</a>
+                    <a class="nav-link" href="#" onclick="changePage(3)">Groupes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="changePage(9)">Interrupteurs</a>
+                    <a class="nav-link" href="#" onclick="changePage(4)">Interrupteurs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="changePage(10)">Catégories</a>
+                    <a class="nav-link" href="#" onclick="changePage(5)">Catégories</a>
                 </li>
             </ul>
         </nav>
-
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
             <h1>Programmation de charge</h1>
@@ -142,3 +145,4 @@
 <script src="/dist/js/java.js"></script>
 </body>
 </html>
+

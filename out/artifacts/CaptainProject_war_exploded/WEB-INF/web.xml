@@ -75,6 +75,30 @@
 
     <!-- ************************************************* -->
 
+    <!-- ************* Servlet Admin Programmation ************* -->
+
+    <servlet>
+        <servlet-name>Servlet_admin_programmation</servlet-name>
+        <servlet-class>com.sdzee.servlets.Servlet_admin_programmation</servlet-class>
+
+        <description>Programmation des charges</description>
+
+        <init-param>
+            <param-name>LaTeamJEE</param-name>
+            <param-value>Coyote</param-value>
+        </init-param>
+
+        <load-on-startup>1</load-on-startup>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Servlet_admin_programmation</servlet-name>
+        <url-pattern>/admin_programmation</url-pattern>
+    </servlet-mapping>
+
+    <!-- ************************************************* -->
+
     <!-- ************* Servlet Interrupteur ************** -->
 
     <servlet>
