@@ -81,7 +81,7 @@
             <!-- Charge1 -->
             <div class="row">
               <div class="col-sm-1">
-                <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
+                <img id="img1" class="img-responsive" style="width: 15px" src="/images/vert.png" >
               </div>
               <div class="col-sm-1">
                 <button type="button" class="close" aria-label="Close">
@@ -102,7 +102,7 @@
                 </div>
               </div>
               <div class="col-sm-2">
-                <div class="btn-group" tabindex="0">
+                <div id="bt1" class="btn-group" tabindex="0" onclick="changerEtatCharge(1)">
                   <input type="checkbox" checked data-toggle="toggle">
                 </div>
               </div>
@@ -113,7 +113,7 @@
             <!-- Charge2 -->
             <div class="row">
               <div class="col-sm-1">
-                <img class="img-responsive" style="width: 15px" src="/images/vert.png" >
+                <img id="img2" class="img-responsive" style="width: 15px" src="/images/vert.png" >
               </div>
               <div class="col-sm-1">
                 <button type="button" class="close" aria-label="Close">
@@ -134,7 +134,7 @@
                 </div>
               </div>
               <div class="col-sm-2">
-                <div class="btn-group" tabindex="0">
+                <div id="bt2" class="btn-group" tabindex="0" onclick="changerEtatCharge(2)">
                   <input type="checkbox" checked data-toggle="toggle">
                 </div>
               </div>
@@ -145,7 +145,7 @@
             <!-- Charge3 -->
             <div class="row">
               <div class="col-sm-1">
-                <img class="img-responsive" style="width: 15px" src="/images/rouge.png" >
+                <img id="img3" class="img-responsive" style="width: 15px" src="/images/vert.png" >
               </div>
               <div class="col-sm-1">
                 <button type="button" class="close" aria-label="Close">
@@ -166,7 +166,7 @@
                 </div>
               </div>
               <div class="col-sm-2">
-                <div class="btn-group" tabindex="0">
+                <div id="bt3" class="btn-group" tabindex="0" onclick="changerEtatCharge(3)">
                   <input type="checkbox" checked data-toggle="toggle">
                 </div>
               </div>
@@ -188,5 +188,6 @@
     <script src="/dist/js/popper.min.js"></script>
     <script src="/dist/js/bootstrap.min.js"></script>
     <script src="/dist/js/bootstrap-toggle.min.js"></script>
+    <script src="/dist/js/admin_etat_des_charges.js"></script>
   </body>
 </html>

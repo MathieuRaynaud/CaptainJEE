@@ -2,11 +2,11 @@
 
 function changerEtatCharge(button) {
     var img;
-    console.log("zef");
+
     //Création de la requete HTML
     var xhr = getXMLHttpRequest();
 
-    xhr.open("POST", "/etat_des_charges", true);
+    xhr.open("POST", "/admin_etat_des_charges", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     if(button == 1){

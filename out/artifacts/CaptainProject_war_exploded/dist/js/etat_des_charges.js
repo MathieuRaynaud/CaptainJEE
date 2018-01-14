@@ -2,7 +2,7 @@
 
 function changerEtatCharge(button) {
     var img;
-
+    console.log("zef");
     //Création de la requete HTML
     var xhr = getXMLHttpRequest();
 
