@@ -3,7 +3,7 @@ package com.sdzee.backend_classes;
 import java.util.ArrayList;
 
 public class Charge {
-    private int id_charge;
+    public int id_charge;
     private int numero_sortie_de_puissance;
     private int priorite;
     private float calibre;

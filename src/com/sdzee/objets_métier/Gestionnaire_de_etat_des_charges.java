@@ -1,6 +1,7 @@
 package com.sdzee.objets_métier;
 
 import com.sdzee.API_BDD.SQLite;
+import com.sdzee.backend_classes.Charge;
 import com.sdzee.beans.Etat_des_charges;
 
 import javax.servlet.http.HttpServletRequest;
@@ -12,6 +13,9 @@ public class Gestionnaire_de_etat_des_charges {
 
     private Gestionnaire_de_etat_des_charges() {
         charges = new Etat_des_charges();
+        charges.ajouter_charge(new Charge());
+        charges.ajouter_charge(new Charge());
+        charges.ajouter_charge(new Charge());
     }
 
     private static Gestionnaire_de_etat_des_charges instance = new Gestionnaire_de_etat_des_charges();

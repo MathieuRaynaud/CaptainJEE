@@ -26,6 +26,7 @@ public class Servlet_admin_etat_des_charges extends HttpServlet {
         String charge2 = request.getParameter("charge2");
         String charge3 = request.getParameter("charge3");
 
+
         System.out.println("Etat des charges transmis : "+charge1+", "+charge2+", "+charge3);
         gest.getBDD().connect();
 
