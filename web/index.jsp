@@ -7,13 +7,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>CaptainProject</title>
-  </head>
-  <body>
-    <p>Bonjour !</p>
-    <p>Visitez ce maginfique site internet : <a target="_blank" href="http://www.mathieu-raynaud.com">Mathieu Raynaud Website</a></p>
-    <p>Mais surtout pas celui-là qui est moche : <a href="http://lchasserat.com">Laurent Chasserat Website</a></p>
-  </body>
+  <%@ include file="./WEB-INF/src/login.jsp" %>
 </html>
 
