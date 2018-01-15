@@ -8,9 +8,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class UtilisateurClassique_Groupe_de_charges_Test {
+public class Groupe_de_charges_Test {
 
     private Etat_Groupe_de_charges groupes;
 
@@ -33,14 +34,14 @@ public class UtilisateurClassique_Groupe_de_charges_Test {
 
     @Test
     public void ajout_un_groupe_une_charge() {
-        Groupe_de_charges groupe1 = new Groupe_de_charges();
-        Charge charge1 = new Charge();
+        Groupe_de_charges groupe = new Groupe_de_charges();
+        Charge charge = new Charge();
 
-        groupes.add(groupe1);
-        groupes.addCharge(charge1, groupe1);
+        groupes.add(groupe);
+        groupes.addCharge(charge, groupe);
 
-        assertEquals(groupe1.liste_charges.size(), 1);
-        assertTrue(groupes.containsCharge(charge1, groupe1));
+        assertEquals(groupe.liste_charges.size(), 1);
+        assertTrue(groupes.containsCharge(charge, groupe));
     }
 
     @Test
@@ -55,6 +56,23 @@ public class UtilisateurClassique_Groupe_de_charges_Test {
 
         assertEquals(groupe1.liste_charges.size(), 2);
         assertTrue(groupes.containsCharge(charge1, groupe1));
+        assertTrue(groupes.containsCharge(charge2, groupe1));
+    }
+
+    @Test
+    public void retrait_une_charge() {
+        Groupe_de_charges groupe1 = new Groupe_de_charges();
+        Charge charge1 = new Charge();
+        Charge charge2 = new Charge();
+
+        groupes.add(groupe1);
+        groupes.addCharge(charge1, groupe1);
+        groupes.addCharge(charge2, groupe1);
+
+        groupes.removeCharge(charge1, groupe1);
+
+        assertEquals(groupe1.liste_charges.size(), 1);
+        assertFalse(groupes.containsCharge(charge1, groupe1));
         assertTrue(groupes.containsCharge(charge2, groupe1));
     }
 

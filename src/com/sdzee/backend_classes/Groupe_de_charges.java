@@ -8,6 +8,7 @@ public class Groupe_de_charges {
     private String nom;
     private float consommation;
     public ArrayList<Charge> liste_charges = new ArrayList<>();
+    public ArrayList<Groupe_de_charges> liste_groupe_de_charges = new ArrayList<>();
     private ArrayList<Interrupteur> liste_interrupteurs;
     private ArrayList<Categorie> liste_categories;
 }

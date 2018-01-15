@@ -44,6 +44,12 @@ public class Etat_Groupe_de_charges {
             groupe.liste_charges.add(charge);
     }
 
+    public void removeCharge(Charge charge, Groupe_de_charges groupe) {
+        if (groupes.contains(groupe)) {
+            groupe.liste_charges.remove(charge);
+        }
+    }
+
     public boolean containsCharge(Charge charge, Groupe_de_charges groupe) {
         if (groupes.contains(groupe)) {
             return groupe.liste_charges.contains(charge);
@@ -58,5 +64,4 @@ public class Etat_Groupe_de_charges {
             charge.etat_actuel = value;
         }
     }
-
 }
