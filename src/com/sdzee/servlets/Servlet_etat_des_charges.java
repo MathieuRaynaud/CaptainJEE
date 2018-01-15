@@ -22,6 +22,9 @@ public class Servlet_etat_des_charges extends HttpServlet{
 
     public void doPost( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException{
         Gestionnaire_de_etat_des_charges gest = Gestionnaire_de_etat_des_charges.getInstance();
+
+
+
         String charge1 = request.getParameter("charge1");
         String charge2 = request.getParameter("charge2");
         String charge3 = request.getParameter("charge3");
